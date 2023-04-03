@@ -17,7 +17,7 @@ searchBar.addEventListener("keydown", async function (e) {
       document.querySelector("section").appendChild(searchResult);
     } else {
       const searchResult = document.createElement("h2");
-      searchResult.innerHTML = "Search results";
+      searchResult.innerHTML = `Search results for: ${searchBar.value}`;
       document.querySelector("section").appendChild(searchResult);
     }
     //create card for card container
